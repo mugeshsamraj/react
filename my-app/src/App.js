@@ -20,29 +20,24 @@ const thirdBook = {
   author : 'J. R. R. Tolkien ',
   price : '$99'
 }
-const forthBook = {
-  image : "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/91eMY-kzzXL._AC_UY218_.jpg",
-  title : "Fall of Gondolin",
-  author : 'J. R. R. Tolkien ',
-  price : '$67'
-}
-const fifthBook = {
-  image : "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/91eMY-kzzXL._AC_UY218_.jpg",
-  title : "Fall of Gondolin",
-  author : 'J. R. R. Tolkien ',
-  price : '$67'
-}
-const sixthBook = {
-  image : "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/91eMY-kzzXL._AC_UY218_.jpg",
-  title : "Fall of Gondolin",
-  author : 'J. R. R. Tolkien ',
-  price : '$67'
-}
+
 
   return (
     <section className='bookstore'>
       <div className='bookstore-title'>
         <h1>My Book Store</h1>
+      </div>
+      <div className='books'>
+        <Book image={book.image} title={book.title}
+        author={book.author} />
+      </div>
+      <div className='books'>
+        <Book image={secondBook.image} title={secondBook.title}
+        author={secondBook.author} />
+      </div>
+      <div className='books'>
+        <Book image={thirdBook.image} title={thirdBook.title}
+        author={thirdBook.author} />
       </div>
       <div className='books'>
         <Book image={book.image} title={book.title}
