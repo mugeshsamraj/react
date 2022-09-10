@@ -1,17 +1,15 @@
 import React from 'react'
 
-const Book = () => {
-  const image = 'https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81YyraOaX1L._AC_UY218_.jpg';
-  const title = 'The Lord of the Rings FELLOWSHIP OF THE RING '
-  const author = 'J. R. R. Tolkien '
-  const price = '$99'
+const Book = (props) => {
+ 
   return (
-    <div className='book'>
-    <img src={image} alt={title} />
-    <h1>{title}</h1>
-    <h2>{author}</h2>
-    <h3>{price}</h3>
-    </div>
+    <article className='book' >
+      <div className='book_img-container'>
+        <img src={props.image} alt={props.title} className='book-img' />
+      </div>
+      <h2 className='book-title'>{props.title}</h2>
+      <h3 className='book-author'>{props.author}</h3>
+    </article>
   )
 }
 
